@@ -1,0 +1,399 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    background-color: #0d1b2a;
+    padding-top: 30px; /* Ukuran navbar ditinggikan */
+    padding-bottom: 30px;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #f4d35e !important;
+    gap: 10px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+  }
+
+  .navbar-brand:hover {
+    opacity: 0.9;
+  }
+
+  .brand-icon {
+    background-color: #f4d35e;
+    color: #0d1b2a;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+  }
+
+  .brand-text .tix {
+    color: #f4d35e;
+  }
+
+  .brand-text .fest {
+    color: #ffffff;
+  }
+
+
+  .btn-custom {
+    border-radius: 30px;
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .btn-warning {
+    background-color: #f4d35e;
+    color: #0d1b2a;
+    border: 2px solid transparent;
+    border-radius: 10px;
+  }
+
+  .btn-warning:hover {
+    background-color: transparent;
+    border-color: #f4d35e;
+    color: #f4d35e;
+  }
+
+  /* Carousel Custom Style */
+  .carousel-inner .carousel-item {
+    transition: transform 1s ease, opacity 1s ease;
+    transform: rotateY(0deg) scale(1);
+    backface-visibility: hidden;
+  }
+
+  .carousel-fade .carousel-item {
+    opacity: 0;
+    transition-property: opacity;
+    transform: rotateY(90deg);
+  }
+
+  .carousel-fade .carousel-item.active,
+  .carousel-fade .carousel-item-next.carousel-item-left,
+  .carousel-fade .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+
+  .carousel-inner img {
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  /*style event card 
+  /* Container besar untuk card event */
+.card-event-wrapper {
+    background-color: #0d1b2a;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    color: #ffffff;
+  }
+  
+  /* Untuk memastikan container selaras dengan hero */
+  .container.custom-width {
+    max-width: 1140px;
+    margin: auto;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  
+  /* Judul section */
+  .card-event-wrapper h3 {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  /* Card styling */
+  .card {
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #ffffff;
+    color: #0d1b2a;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-img-top {
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card-body p,
+  .card-body i {
+    color: #000;
+    font-size: 0.9rem;
+  }
+
+  .card-body h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .text-price {
+    color: #f4d35e;
+    font-weight: 600;
+  }
+  
+  .btn-primary {
+    background-color: #0d1b2a;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background-color: #f4d35e;
+  }
+  
+  .laris-manis-section {
+    width: 99.5vw; /* full lebar viewport */
+    height: 20vw;
+    margin-left: calc(-50vw + 50%); /* buat "keluar" dari pembungkus konten */
+    background-image: url('asset/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  /* Card besar pembungkus slider */
+  .card-slider-wrapper {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  /* Scrollable area */
+  .event-slider {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+    gap: 20px;
+  }
+  .event-slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .event-card {
+    width: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* biar elegan */
+  }
+  
+  .event-card img {
+    height: 120px;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .event-card .card-body {
+    background-color: #fff;
+    color: #000;
+    padding: 12px; /* lebih compact */
+    font-size: 14px;
+  }
+  
+  .event-card .card-body h5 {
+    font-size: 16px;
+    margin: 8px 0;
+    font-weight: bold;
+  }
+  
+  .event-card .card-body p {
+    margin: 4px 0;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .section-kotamu {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+  }
+  
+  .card-kotamu {
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    padding: 1.5rem 1rem;
+    height: 100%;
+    border: 2px solid #0b1452;
+  }
+  
+  .card-kotamu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-kotamu img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+  
+  .card-kotamu .nama-kota {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #0b1452;
+    margin: 0;
+  }
+
+  .city-img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .footer-dark {
+    background-color: #0B1D2A;
+    width: 99.5vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 3rem 1rem;
+    color: white;
+  }
+  
+  .footer-dark .container {
+    max-width: 1140px;
+    margin: auto;
+  }
+  
+  .text-yellow {
+    color: #FFD84D;
+  }
+  
+  .logo-icon .ticket-icon {
+    background-color: #FFD84D;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #0B1D2A;
+    font-weight: bold;
+  }
+  
+  .footer-link {
+    display: block;
+    color: #ffffffcc;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #FFD84D;
+    padding-left: 5px;
+  }
+  
+  .social-icon {
+    font-size: 20px;
+    color: #ffffffcc;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #FFD84D;
+    transform: scale(1.1);
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* pastikan tinggi minimum layar penuh */
+  }
+  
+  main {
+    flex: 1; /* konten utama ngisi ruang yang tersedia */
+  }
+  
+  .footer-dark .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-dark .col-md-4 {
+    min-width: 250px;
+  }
+  
+  .footer-dark .col-md-4:nth-child(2),
+  .footer-dark .col-md-4:nth-child(3) {
+    text-align: right;
+  }
+  
+  .footer-brand-icon {
+    color: #f4d35e; /* Warna kuning Bootstrap */
+  }
+  
+  .footer-brand-text .tix {
+    color: #f4d35e;
+  }
+  
+  /* Gaya untuk Search Bar */
+.search-bar {
+  border-radius: 10px; /* Radius sudut 10px */
+  padding: 0.8rem 1.5rem; /* Lebih panjang dengan padding yang lebih besar */
+  font-size: 1rem;
+  background-color: #f8f9fa; /* Latar belakang terang */
+  border: none; /* Tidak ada border */
+  color: #0d1b2a; /* Teks gelap agar kontras dengan latar belakang */
+  width: 500px; /* Lebih panjang, sesuaikan dengan keinginan Anda */
+  transition: all 0.3s ease;
+  margin-left: 150px;
+}
+
+.search-bar:focus {
+  background-color: #ffffff; /* Mengubah latar belakang saat fokus */
+  color: #0d1b2a;
+  box-shadow: 0 0 10px rgba(244, 211, 94, 0.6); /* Efek pencahayaan kuning saat fokus */
+}
+
+/* Ikon Search */
+.search-icon-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  color: #0d1b2a; /* Warna ikon sesuai dengan teks */
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.search-icon-btn:hover {
+  color: #f4d35e; /* Ikon berubah warna saat hover */
+}
+
+/* Tombol icon untuk mobile dan desktop */
+.search-icon-btn i {
+  font-size: 1.2rem; /* Ukuran ikon */
+}
+
